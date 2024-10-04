@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="backgroundVideo.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter Your location" class="input-box">
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>Sorry Locaton not found!!!</h1>
+            <img src="notfound.jpg" alt="404 Error">
+        </div>
+                <div class="weather-body">
+                    <img src="img1.png" alt="Weather Image" class="weather-img">
+                    <div class="weather-box">
+                        <p class="temprature">0°C</p>
+                        <p class="description">light rain</p>
+                    </div>
+                    <div class="weather-details">
+                    <div class="humidity">
+                        <i class="fa-sharp fa-solid fa-droplet"></i>
+                            <div class="text">
+                                <span id="humidity">45%</span>
+                                <p>Humidity</p>
+                            </div>
+                    </div>
+                    <div class="wind"></div>
+                        <i class="fa-solid fa-wind"></i>
+                            <div class="text">
+                                <span id="wind-speed">12Km/H</span>
+                                <p>Wind Speed</p>
+                            </div>
+                    </div>
+                </div>
+            </di>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
